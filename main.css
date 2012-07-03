@@ -1,0 +1,40 @@
+body {
+    font:150% "Arial";
+    font-variant:small-caps;
+    letter-spacing:.3em;
+    color:#222
+}
+
+h1 {
+    margin:0
+}
+
+h2 {
+    margin:0;
+    font-size:60%;
+    color:#ed2024
+}
+
+a {
+    text-decoration:none
+}
+
+#middle dl {
+    float:left
+}
+
+.folders  a{
+    color:#8dc434
+}
+
+.folders a:hover {
+    color:#a7df38
+}
+
+.extensions a {
+    color:#00b6f0;font-size:85%
+}
+
+.extensions  a:hover{
+    color:#0cf
+}

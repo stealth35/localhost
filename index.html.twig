@@ -1,0 +1,32 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+
+    <h1>{{ app.request.host }}</h1>
+    <h2>PHP {{ infos|join('| ') }}</h2>
+
+    <div id="middle">
+        <dl class="folders">
+            <dt>Folders</dt>
+
+            {% for directory in directories %}
+
+                 <dd><a href="{{ directory.filename }}">{{ directory.filename }}</a></dd>
+
+            {% endfor %}
+
+        </dl>
+
+        <dl class="extensions">
+            <dt>Extensions</dt>
+
+            {% for extension in extensions %}
+
+                 <dd><a href="phpinfo.php#module_{{ extension }}">{{ extension }}</a></dd>
+
+            {% endfor %}
+
+        </dl>
+    </div>
+
+{% endblock %}
