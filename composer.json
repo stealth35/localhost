@@ -1,4 +1,16 @@
 {
+    "name": "stealth35/localhost",
+    "type": "localhost",
+    "description": "My Localhost",
+    "keywords": ["localhost"],
+    "homepage": "https://github.com/stealth35/localhost",
+    "license": "MIT",
+    "authors": [
+        {"name": "Stealth35"}
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
     "require": {
         "twig/twig": "1.*@stable",
         "symfony/finder": "2.1.*"
