@@ -10,6 +10,8 @@
             <h1>{{ host }}</h1>
             <h2>PHP {{ infos|join(' | ') }}</h2>
 
+            <span id="random">Did you know <a href="http://www.php.net/manual/en/function.{{ function|replace({'_': '-'}) }}.php">{{ function }}</a></strong> ?</span>
+
             <div id="middle">
                 <dl class="folders">
                     <dt>Folders</dt>

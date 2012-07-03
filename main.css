@@ -19,6 +19,11 @@ a {
     text-decoration:none
 }
 
+#random {
+    font-size:60%;
+    letter-spacing:.2em;
+}
+
 #middle dl {
     float:left
 }
@@ -32,7 +37,8 @@ a {
 }
 
 .extensions a {
-    color:#00b6f0;font-size:85%
+    color:#00b6f0;
+    font-size:85%;
 }
 
 .extensions  a:hover{
