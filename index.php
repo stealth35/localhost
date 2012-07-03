@@ -1,25 +1,19 @@
 <?php
-require_once __DIR__.'/vendor/autoload.php'; 
 
-$app = new Silex\Application();
+require_once __DIR__.'/vendor/autoload.php';
 
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__,
+$loader = new Twig_Loader_Filesystem(__DIR__);
+$twig = new Twig_Environment($loader);
+
+$finder = new Symfony\Component\Finder\Finder();
+$finder->directories()->in(__DIR__)->exclude('vendor')->depth('== 0');
+
+$extensions = get_loaded_extensions();
+natcasesort($extensions);
+
+echo $twig->render('index.html.twig',array (
+    'host'        => $_SERVER['SERVER_NAME'],
+    'directories' => $finder,
+    'infos'       => array(PHP_VERSION, PHP_SAPI, PHP_OS),
+    'extensions'  => $extensions
 ));
-
-$app->get('/', function() use($app) {
-    $finder = new Symfony\Component\Finder\Finder();
-    $finder->directories()->in(__DIR__)->exclude('vendor')->depth('== 0');
-
-    $infos = array(PHP_VERSION, PHP_SAPI, PHP_OS);
-    $extensions = get_loaded_extensions();
-    natcasesort($extensions);
-
-    return $app['twig']->render('index.html.twig', array(
-        'directories' => $finder,
-        'infos'       => $infos,
-        'extensions'  => $extensions
-    ));
-});
-
-$app->run(); 
