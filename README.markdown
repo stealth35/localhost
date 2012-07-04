@@ -7,4 +7,4 @@ Install
 Screenshot
 ----------
 
-![Screenshot](https://raw.github.com/stealth35/localhost/master/screenshot.jpg)
+![Screenshot](https://github.com/stealth35/localhost/raw/master/screenshot.png)
