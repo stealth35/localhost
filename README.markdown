@@ -7,4 +7,4 @@ Install
 Screenshot
 ----------
 
-![Screenshot](http://farm9.staticflickr.com/8008/7499674896_3abb337c0c_z.jpg)
+![Screenshot](https://raw.github.com/stealth35/localhost/master/screenshot.jpg)
