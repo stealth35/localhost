@@ -7,4 +7,4 @@ Install
 Screenshot
 ----------
 
-![Screenshot](http://farm9.staticflickr.com/8290/7499652268_1fdc9427e7_z_d.jpg)
+![Screenshot](http://farm9.staticflickr.com/8008/7499674896_3abb337c0c_z.jpg)
